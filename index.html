@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инфографика: Netflix и IMDb — кинематографичный анализ данных</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Шрифт Inter для современной типографики -->
+    <!-- Шрифт Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
@@ -13,7 +13,6 @@
 <body>
 
     <div class="particle-bg"></div>
-
     <div class="glass-overlay"></div>
 
     <main>
@@ -36,13 +35,13 @@
                 <div class="charts-grid">
                     <div class="chart-card glass">
                         <h3>Фильмы vs Сериалы</h3>
-                        <img src="./plots/movies_vs_tv.png" 
+                        <img src="plots/movies_vs_tv.png" 
                              alt="Столбчатая диаграмма: количество фильмов и сериалов на Netflix" 
                              loading="lazy">
                     </div>
                     <div class="chart-card glass">
                         <h3>Топ-10 стран</h3>
-                        <img src="./plots/top_10_countries.png" 
+                        <img src="plots/top_10_countries.png" 
                              alt="Горизонтальная диаграмма: топ-10 стран-производителей контента Netflix" 
                              loading="lazy">
                     </div>
@@ -50,55 +49,50 @@
             </div>
         </section>
 
-        <!-- Слайд 3: динамика Netflix (тёмный фон) -->
         <section class="slide dark" id="netflix-years">
             <div class="content">
                 <h2>Пик производства — 2010-е годы</h2>
                 <p class="insight">Количество релизов резко выросло после 2000 года.</p>
-                <img src="./plots/shows_by_year.png" 
+                <img src="plots/shows_by_year.png" 
                      alt="Линейный график: динамика выпуска контента Netflix по годам" 
                      loading="lazy" 
                      class="slide-image">
             </div>
         </section>
 
-        <!-- Слайд 4: жанры IMDb (светлый фон) -->
         <section class="slide light" id="imdb-genres">
             <div class="content">
                 <h2>Драма — главный жанр IMDb</h2>
                 <p class="insight">Большинство фильмов из Top 1000 относятся к драме.</p>
-                <img src="./plots/imdb_genre_distribution.png" 
+                <img src="plots/imdb_genre_distribution.png" 
                      alt="Горизонтальная диаграмма: распределение жанров в IMDb Top 1000" 
                      loading="lazy" 
                      class="slide-image">
             </div>
         </section>
 
-        <!-- Слайд 5: режиссёры IMDb (тёмный фон) -->
         <section class="slide dark" id="imdb-directors">
             <div class="content">
                 <h2>Некоторые режиссёры доминируют</h2>
                 <p class="insight">Небольшое число режиссёров представлено чаще остальных.</p>
-                <img src="./plots/imdb_top_10_directors.png" 
+                <img src="plots/imdb_top_10_directors.png" 
                      alt="Столбчатая диаграмма: топ-10 режиссёров IMDb Top 1000" 
                      loading="lazy" 
                      class="slide-image">
             </div>
         </section>
 
-        <!-- Слайд 6: годы IMDb (светлый фон) -->
         <section class="slide light" id="imdb-years">
             <div class="content">
                 <h2>Рост качества кино со временем</h2>
                 <p class="insight">Большинство культовых фильмов сосредоточены в определённых исторических периодах.</p>
-                <img src="./plots/imdb_movies_by_year.png" 
+                <img src="plots/imdb_movies_by_year.png" 
                      alt="Линейный график: распределение фильмов IMDb Top 1000 по годам" 
                      loading="lazy" 
                      class="slide-image">
             </div>
         </section>
 
-        <!-- Заключительный слайд с итоговым выводом -->
         <section class="slide hero end" id="conclusion">
             <h2 class="gradient-text">Вывод</h2>
             <p class="subtitle">
@@ -108,7 +102,6 @@
         </section>
     </main>
 
-    <!-- Скрипт для генерации частиц (огоньков) -->
-    <script src="./js/fire.js"></script>
+    <script src="js/fire.js"></script>
 </body>
 </html>
